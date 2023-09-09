@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+  <div id="wrapper">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <h1 class="heading">Age Calculator</h1>
+      <div class="underline"></div>
+    </div>
+    <div class="container">
+      <div class="ip">
+        <div class="date">
+          <h3>Date</h3>
+          <input type="text" placeholder="DD" min="1" max="31" class="dayIp error">
+          <p class="errorText">Error</p>
+        </div>
+        <div class="Month">
+          <h3>Month</h3>
+          <input type="text" placeholder="MM" min="1" max="12" class="monthIp error">
+          <p class="errorText">error</p>
+        </div>
+        <div class="Year">
+          <h3>Year</h3>
+          <input type="text" placeholder="YYYY" min="1600" class="yearIp error">
+          <p class="errorText">error</p>
+        </div>
+      </div>
+      <div class="break">
+        <div class="hr"></div>
+        <img src="./assets/images/icon-arrow.svg" alt="">
+      </div>
+      <div class="op">
+        <div><i><h1><span class="var">-- </span>Years</h1></i></div>
+        <div><i><h1><span class="var">-- </span>Months</h1></i></div>
+        <div><i><h1><span class="var">-- </span>Days</h1></i></div>
+      </div>
+      <button class="btn">Submit</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
